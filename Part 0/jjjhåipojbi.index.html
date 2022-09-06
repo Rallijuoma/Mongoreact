@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="jjjhåipojbi.css">
+        <!-- <link rel="stylesheet" href="jjjhåipojbi.css">> -->
     </head>
+    <style>
+        
+        ul{
+            margin-top: 3px;
+            margin-bottom: 3px;
+            list-style: none;
+        }
+
+        ul li::before{
+            color: black;
+            display: inline-block;
+            content: "\2022";
+            
+        }
+
+        p{
+            margin-top: 20px;
+        }
+
+        a:hover{
+          background-color: red;
+        }
+
+        form{
+            margin-top: 10px;
+            display: table;
+        }
+
+        div{
+            display: table-row;
+        }
+        label, input{
+            display: table-cell;
+            margin-bottom: 10px;
+        }
+        label{
+            padding-right: 10px;
+        }
+
+    </style>
+
     <body>
         <div class = "container">
             <img src="barca.png" alt="Logo" width="200"/>
@@ -12,7 +53,7 @@
             <ul>
                 <li>Xavi Hernandez</li>
                     <ul>
-                        <li>767</li>
+                        <li>767 </li>
                     </ul>
                 
                 <li>Lionel Messi</li>
@@ -22,7 +63,7 @@
 
                 <li>Andres Iniesta</li>
                     <ul>
-                        <li>674</li>
+                        <li>674 </li>
                     </ul>
 
                 <li>Sergio Busquets</li>
@@ -39,5 +80,20 @@
             <a href="https://www.fcbarcelona.com/en/football/first-team/honours" target="_blank" rel="noreferrer">FC Barcelonas honours</a>
 
         </div>
+
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-example">
+              <label for="email">Enter your email: </label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-example">
+              <input type="submit" value="Subscribe!">
+            </div>
+          </form>
+          
     </body>
 </html>
