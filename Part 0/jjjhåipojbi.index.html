@@ -6,8 +6,8 @@
     <style>
         
         ul{
-            margin-top: 3px;
-            margin-bottom: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
             list-style: none;
         }
 
@@ -26,6 +26,27 @@
           background-color: red;
         }
 
+  
+
+        table,
+            td {
+                border: 1px solid #333;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            tr{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            thead,
+            tfoot {
+                background-color: #333;
+                color: #fff;
+            }
+
+        
         form{
             margin-top: 10px;
             display: table;
@@ -47,7 +68,6 @@
     <body>
         <div class = "container">
             <img src="barca.png" alt="Logo" width="200"/>
-            <p>Logo</p>
             
             <p>Most games played in FC Barcelonas history</p>
             <ul>
@@ -81,7 +101,21 @@
 
         </div>
 
-        <form action="" method="get" class="form-example">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Most goals</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lionel Messi</td>
+                    <td>672 goals</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="">
             <div class="form-example">
               <label for="name">Enter your name: </label>
               <input type="text" name="name" id="name" required>
